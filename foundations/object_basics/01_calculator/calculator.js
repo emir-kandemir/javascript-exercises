@@ -5,8 +5,11 @@ const add = function(a,b) {
 const subtract = function(a,b) {
 	return a - b;
 };
-const sum = function() {
-	
+const sum = function(arr) {
+  const initialValue = 0;
+  const sumWithInitial = arr.reduce((accumulator, currentValue)  => 
+    accumulator + currentValue, initialValue,);
+  return sumWithInitial;
 };
 
 const multiply = function() {
