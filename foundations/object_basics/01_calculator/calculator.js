@@ -23,8 +23,12 @@ const power = function(base, exponent) {
 	return base ** exponent;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let endValue = 1;
+	for (let startingValue = number; startingValue >= 1; startingValue-- ) {
+    endValue *= startingValue;
+  }
+    return endValue;
 };
 
 // Do not edit below this line
