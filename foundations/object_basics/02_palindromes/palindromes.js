@@ -1,8 +1,8 @@
 const palindromes = function (word) {
-    let reversedWord = word.split("").reverse().join("");
-    if (reversedWord == word) {
-        return true;
-    } else return false;
+    const re = /\W+/g;
+    let firstWord = word.toLowerCase().replace(re, '');
+    let reversedWord = firstWord.split("").reverse().join("");
+    return reversedWord === firstWord;
 };
 
 // Do not edit below this line
